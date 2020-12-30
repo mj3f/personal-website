@@ -1,11 +1,7 @@
 import React, { FunctionComponent } from 'react';
 
-const Projects: FunctionComponent<Props> = ({}) => (
-    <p>List of projects to go in here!</p>
+const Projects: FunctionComponent = () => (
+    <h2 className="text-center">Nothing to see here yet!</h2>
 );
-
-interface Props {
-
-}
 
 export default Projects;
