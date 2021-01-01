@@ -24,7 +24,7 @@ const Footer = () => {
             </div>
             <div className="flex flex-row">
                 <a href="https://www.msjp.dev" className="hover:text-green-500">
-                    &#169; 2020 Mike Pratt
+                    &#169; 2021 Mike Pratt
                 </a>
             </div>
         </div>
