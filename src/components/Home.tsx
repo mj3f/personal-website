@@ -26,12 +26,14 @@ const Home: FunctionComponent = () => {
         }), 3000);
     }, [state])
 
+    // FIXME add animate-fade class to state.aboutMeSnippet, there is a time slippage between setTimeout and the animation duration of 3 seconds.
+    // after the first pass-through (which works perfectly), the aboutMeSnippet gets updated after the fade in animation is run, and gets progressively worse.
     return (
         <div className="flex flex-col flex-wrap w-full h-full justify-center items-center">
             <img src={memoji} alt="My mind is blown, always!" className="h-48 w-48 flex-auto"/>
             <div className="flex flex-auto w-full justify-center">
                 <div className="w-1/2 text-right text-2xl font-semibold">Hello there! I'm Mike and I </div>
-                <div className="w-1/2 pl-1 text-2xl font-semibold animate-fade">{state.aboutMeSnippet}.</div>
+                <div className="w-1/2 pl-1 text-2xl font-semibold">{state.aboutMeSnippet}.</div>
             </div>
             <div className="flex-auto pt-5">
                 I am currently a <a className="p-0 font-semibold">Software Engineer</a> at {' '}
