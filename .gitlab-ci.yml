@@ -4,11 +4,11 @@ services:
   - docker:dind
 
 stages:
-  - buildpublish
+  - build-and-publish
 
 
-buildpublish:
-  stage: publish
+build-and-publish:
+  stage: build-and-publish
   script:
     - echo "Building image"
     - docker build --tag personal-website:latest .
