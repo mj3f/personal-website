@@ -1,0 +1,18 @@
+image: docker:latest
+
+services:
+  - docker:dind
+
+stages:
+  - build-and-publish
+
+
+build-and-publish:
+  stage: build-and-publish
+  script:
+    - echo "Building image"
+    - docker build --tag personal-website:latest .
+    - echo "Publishing built image"
+    - docker tag personal-website:latest mikepratt/personal-website:latest
+    - docker push mikepratt/personal-website:latest
+    - docker rmi personal-website:latest
