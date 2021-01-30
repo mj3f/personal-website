@@ -38,7 +38,7 @@ const App = () => {
                             </div>
                         </nav>
                     </header>
-                    <main className="p-5 mb-auto">
+                    <main className="p-5 m-auto">
                         <Switch>
                             <Route exact path="/" component={Home} />
                             <Route exact path="/projects" component={Projects} />
