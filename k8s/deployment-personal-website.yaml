@@ -1,0 +1,39 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: personal-website
+  labels:
+    app: personal-website
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: personal-website
+  template:
+    metadata:
+      labels:
+        app: personal-website
+    spec:
+      containers:
+        - name: personal-website
+          image: registry.gitlab.com/msjp/personal-website:latest
+          imagePullPolicy: Always
+          ports:
+            - containerPort: 3000
+      imagePullSecrets:
+        - name: regcred # My own pod, despite being exactly the same as this auto-generated one, doesn't work :/
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: personal-website-service
+spec:
+  selector:
+    app: personal-website
+  type: NodePort
+  ports:
+    - name: http
+      protocol: TCP
+      port: 3000
+      targetPort: 3000
+      nodePort: 30000
