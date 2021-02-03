@@ -1,7 +1,9 @@
 import React, { FunctionComponent } from 'react';
 
 const Projects: FunctionComponent = () => (
-    <h2 className="text-center">Nothing to see here yet!</h2>
+    <div className="text-center">
+        <a href="fpl.msjp.dev">Fantasy Premier League API wrapper written in .NET Core.</a>
+    </div>
 );
 
 export default Projects;

@@ -35,5 +35,5 @@ spec:
     - name: http
       protocol: TCP
       port: 3000
-      targetPort: 3000
+      targetPort: 3000 # EXPOSE 3000 in Dockerfile
       nodePort: 30000
