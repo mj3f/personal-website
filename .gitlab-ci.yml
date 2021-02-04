@@ -16,21 +16,50 @@ before_script:
 
 build:
   stage: build
+  except:
+    - master
   script:
     - echo "Building image"
-    - docker build --tag personal-website:latest .
-    - docker save -o personal-website.tar personal-website:latest
+    - docker build --tag personal-website:$CI_COMMIT_REF_SLUG .
+    - docker save -o personal-website.tar personal-website:$CI_COMMIT_REF_SLUG
   artifacts:
     paths:
       - personal-website.tar
 
 publish:
   stage: publish
+  except:
+    - master
   dependencies:
     - build
   script:
     - echo "Publishing built image"
     - docker load -i personal-website.tar
-    - docker tag personal-website:latest registry.gitlab.com/msjp/personal-website:latest
-    - docker push registry.gitlab.com/msjp/personal-website:latest
-    - docker rmi personal-website:latest
+    - docker tag personal-website:$CI_COMMIT_REF_SLUG registry.gitlab.com/msjp/personal-website:$CI_COMMIT_REF_SLUG
+    - docker push registry.gitlab.com/msjp/personal-website:$CI_COMMIT_REF_SLUG
+    - docker rmi personal-website:$CI_COMMIT_REF_SLUG
+
+build-master:
+  stage: build
+  only:
+    - master
+  script:
+    - echo "Building (master) image"
+    - docker build --tag personal-website:$CI_COMMIT_TAG .
+    - docker save -o personal-website.tar personal-website:master.$CI_PIPELINE_ID
+  artifacts:
+    paths:
+      - personal-website.tar
+
+publish-master:
+  stage: publish
+  only:
+    - master
+  dependencies:
+    - build-master
+  script:
+    - echo "Publishing built (master) image"
+    - docker load -i personal-website.tar
+    - docker tag personal-website:$CI_COMMIT_REF_NAME registry.gitlab.com/msjp/personal-website:master.$CI_PIPELINE_ID
+    - docker push registry.gitlab.com/msjp/personal-website:master.$CI_PIPELINE_ID
+    - docker rmi personal-website:master.$CI_PIPELINE_ID
