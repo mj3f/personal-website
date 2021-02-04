@@ -3,13 +3,6 @@ image: docker:latest
 services:
   - docker:dind
 
-workflow:
-  rules:
-    # Only execute when a valid version tag like v1.0, 2.3 or similar is given
-    # Required is always one point like 1.0
-    - if: $CI_COMMIT_TAG =~ /^v?[0-9]+[.][0-9]+([.][0-9]+)?$/
-    - if: $CI_COMMIT_BRANCH
-
 variables:
   DOCKER_LOGIN_USER: ""
   DOCKER_LOGIN_PASSWORD: ""
@@ -52,7 +45,7 @@ build-master:
     - master
   script:
     - echo "Building (master) image"
-    - docker build --tag personal-website:$CI_COMMIT_TAG .
+    - docker build --tag personal-website:master.$CI_PIPELINE_ID .
     - docker save -o personal-website.tar personal-website:master.$CI_PIPELINE_ID
   artifacts:
     paths:
