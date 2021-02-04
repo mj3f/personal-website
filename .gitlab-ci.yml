@@ -26,6 +26,19 @@ build:
     paths:
       - personal-website.tar
 
+publish:
+  stage: publish
+  except:
+    - master
+  dependencies:
+    - build
+  script:
+    - echo "Publishing built image"
+    - docker load -i personal-website.tar
+    - docker tag personal-website:$CI_COMMIT_REF_SLUG registry.gitlab.com/msjp/personal-website:$CI_COMMIT_REF_SLUG
+    - docker push registry.gitlab.com/msjp/personal-website:$CI_COMMIT_REF_SLUG
+    - docker rmi personal-website:$CI_COMMIT_REF_SLUG
+
 build-master:
   stage: build
   only:
@@ -37,19 +50,6 @@ build-master:
   artifacts:
     paths:
       - personal-website.tar
-
-publish:
-  stage: publish
-  except:
-    - master
-  dependencies:
-    - build
-  script:
-    - echo "Publishing built image"
-    - docker load -i personal-website.tar
-    - docker tag personal-website:$CI_COMMIT_REF_NAME registry.gitlab.com/msjp/personal-website:$CI_COMMIT_REF_NAME
-    - docker push registry.gitlab.com/msjp/personal-website:$CI_COMMIT_REF_NAME
-    - docker rmi personal-website:$CI_COMMIT_REF_NAME
 
 publish-master:
   stage: publish
