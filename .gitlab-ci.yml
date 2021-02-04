@@ -56,7 +56,7 @@ publish-master:
   stage: publish
   only:
     - master
-    - tags
+    - tags # doesn't stop it running
   dependencies:
     - build-master
   script:
