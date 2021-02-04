@@ -20,8 +20,8 @@ build:
     - master
   script:
     - echo "Building image"
-    - docker build --tag personal-website:${$CI_COMMIT_REF_NAME} .
-    - docker save -o personal-website.tar personal-website:$CI_COMMIT_REF_NAME
+    - docker build --tag personal-website:$CI_COMMIT_REF_SLUG .
+    - docker save -o personal-website.tar personal-website:$CI_COMMIT_REF_SLUG
   artifacts:
     paths:
       - personal-website.tar
