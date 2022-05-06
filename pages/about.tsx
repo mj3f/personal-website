@@ -4,7 +4,7 @@ import Image from "next/image";
 export default function About() {
     return (
         <Layout>
-            <div className="flex flex-col p-10 h-full w-full justify-start items-center">
+            <div className="flex flex-col p-10 h-full w-full justify-start items-center dark:text-white">
                 <h1 className="flex justify-start w-full text-4xl md:text-6xl font-bold">Hey, I'm Mike 👋</h1>
                 <div className="flex pt-5">
                     <article className="flex flex-col md:w-2/3">

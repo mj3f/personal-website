@@ -2,6 +2,7 @@ import React from "react";
 import Link from "next/link";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub, faLinkedin, faTwitter } from "@fortawesome/free-brands-svg-icons";
+import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 
 const Footer: React.FC = () => {
     const anchorClass = "px-2 hover:text-amber-300 dark:hover:text-amber-300"; // FIXME: hover in dark mode not working
@@ -13,13 +14,16 @@ const Footer: React.FC = () => {
             </div>
             <div className="flex w-full justify-center">
                 <Link href="https://github.com/mj3f/">
-                    <a className={anchorClass}><FontAwesomeIcon icon={faGithub} size={'2x'} className="dark:text-white"/></a>
+                    <a className={anchorClass}><FontAwesomeIcon icon={faGithub} size={'2x'} className="dark:text-white" /></a>
                 </Link>
                 <Link href="https://twitter.com/mikej3f/">
-                    <a className={anchorClass}><FontAwesomeIcon icon={faTwitter} size={'2x'} className="dark:text-white"/></a>
+                    <a className={anchorClass}><FontAwesomeIcon icon={faTwitter} size={'2x'} className="dark:text-white" /></a>
                 </Link>
                 <Link href="https://www.linkedin.com/in/michael-pratt-650046123/">
-                    <a className={anchorClass}><FontAwesomeIcon icon={faLinkedin} size={'2x'} className="dark:text-white"/></a>
+                    <a className={anchorClass}><FontAwesomeIcon icon={faLinkedin} size={'2x'} className="dark:text-white" /></a>
+                </Link>
+                <Link href="mailto:mikep2319@me.com" aria-label="email">
+                    <a className={anchorClass}><FontAwesomeIcon icon={faEnvelope} size={'2x'} className="dark:text-white" /></a>
                 </Link>
             </div>
             <div className="flex w-full justify-center md:justify-end">

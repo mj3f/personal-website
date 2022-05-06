@@ -17,7 +17,7 @@ export default function Navbar() {
     }, [theme]);
 
 
-    const anchorClass = "p-2 font-medium uppercase hover:border-b-2 border-amber-300 dark:text-white";
+    const anchorClass = "p-2 font-medium uppercase border-b-2 border-transparent hover:border-amber-300 dark:text-white";
 
     let darkModeToggleButton;
 
@@ -42,9 +42,6 @@ export default function Navbar() {
             </Link>
             <Link href="/">
                 <a className={anchorClass}>Projects</a>
-            </Link>
-            <Link href="/">
-                <a className={anchorClass}>Contact</a>
             </Link>
             {/*<Link href="/">*/}
             {/*    <a className={anchorClass}>Photography?</a>*/}
