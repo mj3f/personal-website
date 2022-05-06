@@ -40,7 +40,7 @@ export default function Navbar() {
             <Link href="/about">
                 <a className={anchorClass}>About</a>
             </Link>
-            <Link href="/">
+            <Link href="/projects">
                 <a className={anchorClass}>Projects</a>
             </Link>
             {/*<Link href="/">*/}
