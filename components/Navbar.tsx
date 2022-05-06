@@ -22,22 +22,22 @@ export default function Navbar() {
     let darkModeToggleButton;
 
     if (theme === "light") {
-        darkModeToggleButton = <button onClick={() => setTheme("dark")}>
+        darkModeToggleButton = <button className="pl-2" onClick={() => setTheme("dark")}>
             <FontAwesomeIcon icon={faMoon} size={'1x'} />
         </button>
     } else {
-        darkModeToggleButton = <button onClick={() => setTheme("light")}>
+        darkModeToggleButton = <button className="pl-2" onClick={() => setTheme("light")}>
             <FontAwesomeIcon icon={faSun} size={'1x'} className="dark:text-white"/>
         </button>
     }
 
 
     return (
-        <div className="flex justify-center p-2">
+        <div className="flex flex-col w-full justify-center items-center p-2 md:flex-row">
             <Link href="/">
                 <a className={anchorClass}>Home</a>
             </Link>
-            <Link href="/">
+            <Link href="/about">
                 <a className={anchorClass}>About</a>
             </Link>
             <Link href="/">
