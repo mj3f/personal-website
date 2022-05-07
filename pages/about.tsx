@@ -21,8 +21,9 @@ export default function About() {
                         <p className="p-2">I started programming in 2012. In 2014 I enrolled at the University of Liverpool to study a Bachelors in Computer Science,
                             graduating in 2017 with first class honours.
                         </p>
-                        <p className="p-2">In my spare time I like to read science fiction, play video games, cycle, dabble in amateur photography,
+                        <p className="p-2">In my spare time I like to read books, play video games, cycle, dabble in amateur photography,
                             distro hop (far too much), and watch Football and Formula 1.</p>
+                        <p className="pt-2 font-bold">TODO: Add link to CV here</p>
                     </article>
                     <div className="md:w-1/3">
                         <Image src="/memoji.png" alt="cartoon picture of my head exploding" layout="responsive" height={50} width={50} className="bg-amber-300 rounded-full" />

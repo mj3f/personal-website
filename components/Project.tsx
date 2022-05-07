@@ -10,7 +10,8 @@ export interface Props {
 }
 
 const Project: React.FC<Props> = (props: Props) => {
-    const anchorClass = "border-b-2 border-transparent px-1 pb-1 bg-green-300 hover:bg-white hover:border-amber-300 dark:text-white dark:bg-rose-500 dark:hover:bg-slate-800"
+    const anchorClass = "border-b-2 border-transparent px-1 pb-1 bg-green-300 hover:bg-white hover:border-amber-300" +
+        "dark:text-white dark:bg-rose-500 dark:hover:bg-slate-800"
     return (
         <div className="flex flex-col border-2 border-amber-300 rounded p-4 m-2 w-1/4">
             <h3 className="text-2xl font-semibold">{props.name}</h3>
