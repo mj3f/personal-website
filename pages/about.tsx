@@ -23,7 +23,6 @@ export default function About() {
                         </p>
                         <p className="p-2">In my spare time I like to read books, play video games, cycle, dabble in amateur photography,
                             distro hop (far too much), and watch Football and Formula 1.</p>
-                        <p className="pt-2 font-bold">TODO: Add link to CV here</p>
                     </article>
                     <div className="md:w-1/3">
                         <Image src="/memoji.png" alt="cartoon picture of my head exploding" layout="responsive" height={50} width={50} className="bg-amber-300 rounded-full" />
