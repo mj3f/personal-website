@@ -2,9 +2,11 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faMoon, faSun } from "@fortawesome/free-solid-svg-icons";
 import Link from "next/link";
 import {useEffect, useState} from "react";
+import {useRouter} from "next/router";
 
 export default function Navbar() {
     const [theme, setTheme] = useState("light");
+    const router = useRouter();
 
     useEffect(() => {
         const oldTheme = theme === "light" ? "dark" : "light";
@@ -18,6 +20,7 @@ export default function Navbar() {
 
 
     const anchorClass = "p-2 font-medium uppercase border-b-2 border-transparent hover:border-amber-300 dark:text-white";
+    const activeAnchorClass = "p-2 font-medium uppercase border-b-2 border-amber-300 dark:text-white";
 
     let darkModeToggleButton;
 
@@ -35,13 +38,13 @@ export default function Navbar() {
     return (
         <div className="flex flex-col w-full justify-center items-center p-2 md:flex-row">
             <Link href="/">
-                <a className={anchorClass}>Home</a>
+                <a className={router.pathname === "/" ? activeAnchorClass : anchorClass}>Home</a>
             </Link>
             <Link href="/about">
-                <a className={anchorClass}>About</a>
+                <a className={router.pathname === "/about" ? activeAnchorClass : anchorClass}>About</a>
             </Link>
             <Link href="/projects">
-                <a className={anchorClass}>Projects</a>
+                <a className={router.pathname === "/projects" ? activeAnchorClass : anchorClass}>Projects</a>
             </Link>
             {/*<Link href="/">*/}
             {/*    <a className={anchorClass}>Photography?</a>*/}
