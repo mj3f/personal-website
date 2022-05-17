@@ -10,7 +10,7 @@ export default function Projects() {
                     <Project name="LingoBank" description="An app for language learners." sourceCodeLink="LingoBank" />
                     <Project name="Pomodoro" description="An app for keeping you productive in short bursts." sourceCodeLink="pomodoro" />
                     <Project name="MyGames" description="An app for the patient gamers who have an enormous backlog." sourceCodeLink="my-games" />
-                    <Project name="FPL.NET" description="An unfinished wrapper for the Fantasy Premier League API for .NET Core." sourceCodeLink="api-fpl-new" />
+                    <Project name="FPL.NET" description="An unfinished wrapper for the Fantasy Premier League API for .NET Core." sourceCodeLink="API-FPL-NET" />
                 </div>
             </div>
         </Layout>
