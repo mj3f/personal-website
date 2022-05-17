@@ -9,14 +9,22 @@ export default function Navbar() {
     const router = useRouter();
 
     useEffect(() => {
+        const localTheme = localStorage.getItem("theme");
+        if (localTheme) {
+            setTheme(localTheme);
+        }
+    }, []);
+
+    useEffect(() => {
         const oldTheme = theme === "light" ? "dark" : "light";
         document.documentElement.classList.remove(oldTheme);
         document.documentElement.classList.add(theme);
-
-        localStorage.setItem("theme", theme);
-
-        console.log('root = ', document.documentElement.classList);
     }, [theme]);
+
+    const changeTheme = (newTheme: string) => {
+        localStorage.setItem("theme", newTheme);
+        setTheme(newTheme)
+    };
 
 
     const anchorClass = "p-2 font-medium uppercase border-b-2 border-transparent hover:border-amber-300 dark:text-white";
@@ -25,11 +33,11 @@ export default function Navbar() {
     let darkModeToggleButton;
 
     if (theme === "light") {
-        darkModeToggleButton = <button className="pl-2" onClick={() => setTheme("dark")}>
+        darkModeToggleButton = <button className="pl-2" onClick={() => changeTheme("dark")}>
             <FontAwesomeIcon icon={faMoon} size={'1x'} />
         </button>
     } else {
-        darkModeToggleButton = <button className="pl-2" onClick={() => setTheme("light")}>
+        darkModeToggleButton = <button className="pl-2" onClick={() => changeTheme("light")}>
             <FontAwesomeIcon icon={faSun} size={'1x'} className="dark:text-white"/>
         </button>
     }

@@ -1,5 +1,4 @@
 import React from "react";
-import Link from "next/link";
 import CustomLink from "./CustomLink";
 
 export interface Props {
