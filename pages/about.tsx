@@ -8,27 +8,25 @@ export default function About() {
                 <h1 className="flex justify-start w-full text-4xl md:text-6xl font-bold">Hey, I'm Mike <span className="animate-waving-hand">👋</span></h1>
                 <div className="flex pt-5">
                     <article className="flex flex-col w-full md:w-2/3">
-                        <p className="p-2">I am a Software Engineer based in Wirral, UK. I have over 5 years of professional experience, currently
-                            focusing on building modern, responsive and performant web applications with Angular/React and .NET Core.
+                        <p className="p-2">I am a Software Engineer based in Wirral, UK. I have over 5 years of professional experience, specialising in 
+                            building modern, responsive and performant web applications with Angular/React and .NET Core.
                             I'm currently working as a Software Engineer at Trelleborg Marine & Infrastructure, developing performance and efficiency
-                            management products for ships.
+                            management systems for ships.
                         </p>
                         <p className="p-2">
                             I love learning new things,
                             from creating beautiful web and mobile UIs and building lean and mean APIs, to containerizing all the things
-                            and hacking serial ports. I am currently expanding my knowledge of Kubernetes and cyber-security.
+                            and hacking serial ports. I am currently expanding my knowledge of Kubernetes and microservices.
                         </p>
                         <p className="p-2">I started programming in 2012. In 2014 I enrolled at the University of Liverpool to study a Bachelors in Computer Science,
                             graduating in 2017 with first class honours.
                         </p>
-                        <p className="p-2">In my spare time I like to read books, play video games, cycle, dabble in amateur photography,
-                            distro hop (far too much), and watch Football and Formula 1.</p>
+                        <p className="p-2">In my spare time I like to read books, play video games, cycling, watch Football and Formula 1.</p>
                     </article>
                     <div className="hidden md:w-1/3 md:flex md:justify-end">
                         <div className="h-96 w-96 opacity-75 bg-amber-300 rounded-full flex items-center justify-center">
                             <p className="opacity-0">Nothing to see here!</p>
                         </div>
-                        {/*<Image src="/memoji.png" alt="cartoon picture of my head exploding" layout="responsive" height={50} width={50} className="bg-amber-300 rounded-full" />*/}
                     </div>
                 </div>
                 <section className="flex flex-col pt-5 w-full">
@@ -37,22 +35,22 @@ export default function About() {
                         <ul className="list-disc columns-3">
                             <li>HTML</li>
                             <li>CSS</li>
+                            <li>CSS Frameworks (Boostrap & Tailwind)</li>
                             <li>JavaScript/TypeScript</li>
                             <li>Angular (2+)</li>
                             <li>React</li>
-                            <li>Next.js</li>
                             <li>C# .NET Core/ASP.NET Core</li>
                             <li>SQL Server</li>
                             <li>MySQL/MariaDB</li>
-                            <li className="opacity-50">Android (Java)</li>
-                            <li className="opacity-50">iOS (Swift)</li>
-                            <li className="opacity-50">Laravel</li>
                             <li>Git</li>
-                            <li>Linux (Debian/Red Hat distribution)</li>
-                            <li>Docker/Podman</li>
+                            <li>Linux</li>
+                            <li>Docker</li>
                             <li>Azure cloud</li>
                             <li>CI/CD using Github actions, Gitlab, Jenkins</li>
                             <li>Kubernetes</li>
+                            <li className="opacity-50">Android (Java)</li>
+                            <li className="opacity-50">iOS (Swift)</li>
+                            <li className="opacity-50">Laravel</li>
                         </ul>
                     </div>
                 </section>
