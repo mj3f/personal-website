@@ -54,9 +54,6 @@ export default function Navbar() {
             <Link href="/projects">
                 <a className={router.pathname === "/projects" ? activeAnchorClass : anchorClass}>Projects</a>
             </Link>
-            {/*<Link href="/">*/}
-            {/*    <a className={anchorClass}>Photography?</a>*/}
-            {/*</Link>*/}
             {darkModeToggleButton}
         </div>
     );
