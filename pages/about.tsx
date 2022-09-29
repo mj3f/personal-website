@@ -10,8 +10,7 @@ export default function About() {
                     <article className="flex flex-col w-full md:w-2/3">
                         <p className="p-2">I am a Software Engineer based in Wirral, UK. I have over 5 years of professional experience, specialising in 
                             building modern, responsive and performant web applications with Angular/React and .NET Core.
-                            I'm currently working as a Software Engineer at Trelleborg Marine & Infrastructure, developing performance and efficiency
-                            management systems for ships.
+                            I'm currently working as a Software Engineer at Keoghs.
                         </p>
                         <p className="p-2">
                             I love learning new things,
