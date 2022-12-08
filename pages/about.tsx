@@ -8,7 +8,7 @@ export default function About() {
                 <h1 className="flex justify-start w-full text-4xl md:text-6xl font-bold">Hey, I'm Mike <span className="animate-waving-hand">👋</span></h1>
                 <div className="flex pt-5">
                     <article className="flex flex-col w-full md:w-2/3">
-                        <p className="p-2">I am a Software Engineer based in Wirral, UK. I have over 5 years of professional experience, specialising in 
+                        <p className="p-2">I am a Software Engineer with over 5 years of professional experience, specialising in 
                             building modern, responsive and performant web applications with Angular/React and .NET Core.
                             I'm currently working as a Software Engineer at Keoghs.
                         </p>
@@ -17,8 +17,8 @@ export default function About() {
                             from creating beautiful web and mobile UIs and building lean and mean APIs, to containerizing all the things
                             and hacking serial ports. I am currently expanding my knowledge of Kubernetes and microservices.
                         </p>
-                        <p className="p-2">I started programming in 2012. In 2014 I enrolled at the University of Liverpool to study a Bachelors in Computer Science,
-                            graduating in 2017 with first class honours.
+                        <p className="p-2">I started programming in 2012. In 2014 I enrolled at the University of Liverpool to study Computer Science,
+                            graduating in 2017 with a first.
                         </p>
                         <p className="p-2">In my spare time I like to read books, play video games, cycling, watch Football and Formula 1.</p>
                     </article>
@@ -53,7 +53,6 @@ export default function About() {
                         </ul>
                     </div>
                 </section>
-
             </div>
         </Layout>
     );
