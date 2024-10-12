@@ -1,5 +1,4 @@
 import Layout from "../components/Layout";
-import Image from "next/image";
 
 export default function About() {
     return (
@@ -8,7 +7,7 @@ export default function About() {
                 <h1 className="flex justify-start w-full text-4xl md:text-6xl font-bold">Hey, I'm Mike <span className="animate-waving-hand">👋</span></h1>
                 <div className="flex pt-5">
                     <article className="flex flex-col w-full md:w-2/3">
-                        <p className="p-2">I am a Software Engineer with over 7 years of professional experience, specialising in 
+                        <p className="p-2">I'm a Software Engineer with over 7 years of professional experience, specialising in 
                             building modern, responsive and performant web applications with Angular/React and .NET Core.
                             I'm currently working as a Software Engineer at Keoghs.
                         </p>
@@ -29,24 +28,24 @@ export default function About() {
                     </div>
                 </div>
                 <section className="flex flex-col pt-5 w-full">
-                    <p className="text-2xl md:text-4xl pl-2 pb-2 font-semibold text-center">Skills</p>
+                    <p className="text-2xl md:text-4xl pl-2 pb-2 font-semibold text-center">Technial Skills</p>
                     <div className="flex justify-evenly">
                         <ul className="list-disc columns-3">
                             <li>HTML</li>
                             <li>CSS</li>
-                            <li>CSS Frameworks (Boostrap & Tailwind)</li>
+                            <li>CSS Frameworks (MUI, Tailwind)</li>
                             <li>JavaScript/TypeScript</li>
                             <li>Angular (2+)</li>
                             <li>React</li>
-                            <li>C# .NET Core/ASP.NET Core</li>
-                            <li>SQL Server</li>
-                            <li>MySQL/MariaDB</li>
+                            <li>C# .NET Web APIs & Azure Function Apps</li>
+                            <li>SQL Server/PostgreSQL</li>
+                            <li>Cosmos DB</li>
                             <li>Git</li>
                             <li>Linux</li>
                             <li>Docker</li>
-                            <li>Azure cloud</li>
-                            <li>CI/CD using Github actions, Gitlab, Jenkins</li>
-                            <li>Kubernetes</li>
+                            <li>Azure</li>
+                            <li>CI/CD using Github actions, Azure DevOps</li>
+                            <li>Terraform</li>
                             <li className="opacity-50">Android (Java)</li>
                             <li className="opacity-50">iOS (Swift)</li>
                             <li className="opacity-50">Laravel</li>
