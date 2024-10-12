@@ -8,7 +8,7 @@ export default function About() {
                 <h1 className="flex justify-start w-full text-4xl md:text-6xl font-bold">Hey, I'm Mike <span className="animate-waving-hand">👋</span></h1>
                 <div className="flex pt-5">
                     <article className="flex flex-col w-full md:w-2/3">
-                        <p className="p-2">I am a Software Engineer with over 5 years of professional experience, specialising in 
+                        <p className="p-2">I am a Software Engineer with over 7 years of professional experience, specialising in 
                             building modern, responsive and performant web applications with Angular/React and .NET Core.
                             I'm currently working as a Software Engineer at Keoghs.
                         </p>
