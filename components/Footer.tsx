@@ -14,25 +14,19 @@ const Footer: React.FC = () => {
         <p className="dark:text-white">© 2022-2024 Mike Jeffs</p>
       </div>
       <div className="flex w-full justify-center">
-        <Link href="https://github.com/mj3f/">
-          <a className={anchorClass}>
-            <FontAwesomeIcon icon={faGithub} size={"2x"} />
-          </a>
+        <Link href="https://github.com/mj3f/" className={anchorClass}>
+          <FontAwesomeIcon icon={faGithub} size={"2x"} />
         </Link>
-        <Link href="https://www.linkedin.com/in/michael-pratt-650046123/">
-          <a className={anchorClass}>
-            <FontAwesomeIcon icon={faLinkedin} size={"2x"} />
-          </a>
+        <Link href="https://www.linkedin.com/in/michael-jeffs-pratt-650046123/" className={anchorClass}>
+          <FontAwesomeIcon icon={faLinkedin} size={"2x"} />
         </Link>
-        <Link href="mailto:mikep2319@me.com" aria-label="email">
-          <a className={anchorClass}>
-            <FontAwesomeIcon icon={faEnvelope} size={"2x"} />
-          </a>
+        <Link href="mailto:mikep2319@me.com" aria-label="email" className={anchorClass}>
+          <FontAwesomeIcon icon={faEnvelope} size={"2x"} />
         </Link>
       </div>
       <div className="flex w-full justify-center md:justify-end">
-        <Link href="https://github.com/mj3f/personal-website">
-          <a className="font-light tex-sm dark:text-white">source code</a>
+        <Link href="https://github.com/mj3f/personal-website" className="font-light tex-sm dark:text-white">
+          source code
         </Link>
       </div>
     </div>

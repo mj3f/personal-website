@@ -45,14 +45,14 @@ export default function Navbar() {
 
     return (
         <div className="flex flex-col w-full justify-center items-center p-2 md:flex-row">
-            <Link href="/">
-                <a className={router.pathname === "/" ? activeAnchorClass : anchorClass}>Home</a>
+            <Link href="/" className={router.pathname === "/" ? activeAnchorClass : anchorClass}>
+                Home
             </Link>
-            <Link href="/about">
-                <a className={router.pathname === "/about" ? activeAnchorClass : anchorClass}>About</a>
+            <Link href="/about" className={router.pathname === "/about" ? activeAnchorClass : anchorClass}>
+                About
             </Link>
-            <Link href="/projects">
-                <a className={router.pathname === "/projects" ? activeAnchorClass : anchorClass}>Projects</a>
+            <Link href="/projects" className={router.pathname === "/projects" ? activeAnchorClass : anchorClass}>
+                Projects
             </Link>
             {darkModeToggleButton}
         </div>
