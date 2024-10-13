@@ -10,7 +10,7 @@ export interface Props {
 }
 
 const Project: React.FC<Props> = (props: Props) => (
-        <div className="flex flex-col border-2 border-amber-300 rounded p-4 m-2 w-1/4">
+        <div className="flex flex-col w-fit border-2 border-amber-300 rounded p-4 m-2 md:w-1/4">
             <h3 className="text-2xl font-semibold">{props.name}</h3>
             <p>{props.description}</p>
             <div className="flex pt-1">

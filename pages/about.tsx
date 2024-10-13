@@ -1,11 +1,11 @@
+import ContentPageLayout from "../components/ContentPageLayout";
 import Layout from "../components/Layout";
 
 export default function About() {
     return (
         <Layout>
-            <div className="flex flex-col p-10 h-full w-full justify-start items-center dark:text-white">
-                <h1 className="flex w-full text-4xl md:text-6xl font-bold">Hey, I'm Mike <span className="animate-waving-hand">👋</span></h1>
-                <div className="flex w-full pt-5">
+               <ContentPageLayout title="Hey, I'm Mike" showHandWave>
+               <div className="flex w-full pt-5">
                     <article className="flex flex-col w-full md:w-2/3">
                         <p className="p-2">I'm a Software Engineer with over 7 years of professional experience, specialising in 
                             building modern, responsive and performant web applications with Angular/React and .NET Core.
@@ -54,7 +54,7 @@ export default function About() {
                         </ul>
                     </div>
                 </section>
-            </div>
+               </ContentPageLayout>
         </Layout>
     );
 }

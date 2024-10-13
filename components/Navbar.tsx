@@ -44,7 +44,7 @@ export default function Navbar() {
 
 
     return (
-        <div className="flex flex-col w-full justify-center items-center p-2 md:flex-row">
+        <div className="flex flex-row w-full justify-center items-center p-2">
             <Link href="/" className={router.pathname === "/" ? activeAnchorClass : anchorClass}>
                 Home
             </Link>
