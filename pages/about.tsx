@@ -4,7 +4,7 @@ import Layout from "../components/Layout";
 export default function About() {
     return (
         <Layout>
-               <ContentPageLayout title="Hey, I'm Mike" showHandWave>
+            <ContentPageLayout title="Hey, I'm Mike" showHandWave>
                <div className="flex w-full pt-5">
                     <article className="flex flex-col w-full md:w-2/3">
                         <p className="p-2">I'm a Software Engineer with over 7 years of professional experience, specialising in 
@@ -54,7 +54,7 @@ export default function About() {
                         </ul>
                     </div>
                 </section>
-               </ContentPageLayout>
+            </ContentPageLayout>
         </Layout>
     );
 }
