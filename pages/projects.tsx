@@ -16,6 +16,16 @@ export default function Projects() {
                         description="A python script to fetch all 38 gameweeks of data for a mini league, and a react app to show that data in line chart(s)"
                         sourceCodeLink="fpl-mini"
                     />
+                    <Project
+                        name="Language Intepreter"
+                        description="A near feature-complete intepreter for my own custom programming language called 'monkey'"
+                        sourceCodeLink="monkey"
+                    />
+                    <Project
+                        name="dotfiles"
+                        description="My dotfiles for easily setting up frequently used tools in a Linux environment"
+                        sourceCodeLink="monkey"
+                    />
                 </div>
             </ContentPageLayout>
         </Layout>
