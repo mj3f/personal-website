@@ -17,8 +17,8 @@ export default function Projects() {
                         sourceCodeLink="fpl-mini"
                     />
                     <Project
-                        name="Language Intepreter"
-                        description="A near feature-complete intepreter for my own custom programming language called 'monkey'"
+                        name="Language Interpreter"
+                        description="A near feature-complete interpreter for my own custom programming language called 'monkey'"
                         sourceCodeLink="monkey"
                     />
                     <Project
