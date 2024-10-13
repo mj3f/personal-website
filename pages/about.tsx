@@ -13,9 +13,10 @@ export default function About() {
                         </p>
                         <p className="p-2">
                             I love learning new things,
-                            from creating beautiful web and mobile UIs and building lean and mean APIs, to containerizing all the things
-                            and hacking serial ports. I am currently expanding my knowledge of Kubernetes and microservices.
+                            from creating beautiful web UIs and building fast & secure APIs, to containerizing all the things
+                            and hacking serial ports. 
                         </p>
+                        {/* NOT READY YET: <p>I have started a technical blog where I will be documenting my learnings, you can find it <a href="">here</a>.</p> */}
                         <p className="p-2">I started programming in 2012. In 2014 I enrolled at the University of Liverpool to study Computer Science,
                             graduating in 2017 with a first.
                         </p>
