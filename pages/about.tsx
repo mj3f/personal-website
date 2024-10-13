@@ -29,10 +29,10 @@ export default function About() {
                         </div>
                     </div>
                 </div>
-                <section className="flex flex-col pt-5 w-full">
+                <div className="flex flex-col pt-5 w-full">
                     <p className="text-2xl md:text-4xl pl-2 pb-2 font-semibold text-center">Technical Skills</p>
                     <div className="flex justify-evenly">
-                        <ul className="list-disc columns-3">
+                        <ul className="list-disc columns-1 md:columns-3">
                             <li>HTML</li>
                             <li>CSS</li>
                             <li>CSS Frameworks (MUI, Tailwind)</li>
@@ -53,7 +53,7 @@ export default function About() {
                             <li className="opacity-50">Laravel</li>
                         </ul>
                     </div>
-                </section>
+                </div>
             </ContentPageLayout>
         </Layout>
     );
