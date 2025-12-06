@@ -11,7 +11,7 @@ const Footer: React.FC = () => {
   return (
     <div className="flex flex-col items-center p-2 md:flex-row md:justify-between">
       <div className="flex w-full justify-center md:justify-start">
-        <p className="dark:text-white">© 2022-2025 Mike Jeffs</p>
+        <p className="dark:text-white">© 2022-2026 Mike Jeffs</p>
       </div>
       <div className="flex w-full justify-center">
         <Link href="https://github.com/mj3f/" className={anchorClass}>
