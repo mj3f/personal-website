@@ -3,31 +3,47 @@ import Layout from "../components/Layout";
 import Project from "../components/Project";
 
 export default function Projects() {
-    return (
-        <Layout>
-            <ContentPageLayout title="Projects">
-                <div id="projects" className="flex pt-10 flex-wrap">
-                    <Project name="LingoBank" description="An app for language learners." sourceCodeLink="LingoBank" />
-                    <Project name="Pomodoro" description="An app for keeping you productive in short bursts." sourceCodeLink="pomodoro" />
-                    <Project name="MyGames" description="An app for the patient gamers who have an enormous backlog." sourceCodeLink="my-games" />
-                    <Project name="FPL.NET" description="An unfinished wrapper for the Fantasy Premier League API for .NET Core." sourceCodeLink="API-FPL-NET" />
-                    <Project
-                        name="FPL Mini League data fetcher"
-                        description="A python script to fetch all 38 gameweeks of data for a mini league, and a react app to show that data in line chart(s)"
-                        sourceCodeLink="fpl-mini"
-                    />
-                    <Project
-                        name="Language Interpreter"
-                        description="A near feature-complete interpreter for my own custom programming language called 'monkey'"
-                        sourceCodeLink="monkey"
-                    />
-                    <Project
-                        name="dotfiles"
-                        description="My dotfiles for easily setting up frequently used tools in a Linux environment"
-                        sourceCodeLink="monkey"
-                    />
-                </div>
-            </ContentPageLayout>
-        </Layout>
-    );
+  return (
+    <Layout>
+      <ContentPageLayout title="Projects">
+        <div id="projects" className="flex pt-10 flex-wrap">
+          <Project
+            name="LingoBank"
+            description="An app for language learners."
+            sourceCodeLink="LingoBank"
+          />
+          <Project
+            name="Pomodoro"
+            description="An app for keeping you productive in short bursts."
+            sourceCodeLink="pomodoro"
+          />
+          <Project
+            name="MyGames"
+            description="An app for the patient gamers who have an enormous backlog."
+            sourceCodeLink="my-games"
+          />
+          <Project
+            name="Personal Finance App"
+            description="An app for tracking personal finances (active development, not ready to share this yet)."
+            sourceCodeLink=""
+          />
+          <Project
+            name="FPL Mini League data fetcher"
+            description="A python script to fetch all 38 gameweeks of data for a mini league, and a react app to show that data in line chart(s)"
+            sourceCodeLink="fpl-mini"
+          />
+          <Project
+            name="Language Interpreter"
+            description="A near feature-complete interpreter for my own custom programming language called 'monkey'"
+            sourceCodeLink="monkey"
+          />
+          <Project
+            name="dotfiles"
+            description="My dotfiles for easily setting up frequently used tools in a Linux environment"
+            sourceCodeLink="dotfiles"
+          />
+        </div>
+      </ContentPageLayout>
+    </Layout>
+  );
 }

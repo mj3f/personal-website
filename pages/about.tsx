@@ -42,23 +42,23 @@ export default function About() {
           </p>
           <div className="flex justify-evenly">
             <ul className="list-disc columns-1 md:columns-3">
-              <li>HTML</li>
-              <li>CSS (+ frameworks like MUI, Tailwind)</li>
+              <li>C#</li>
+              <li>.NET 8/10</li>
               <li>TypeScript</li>
               <li>React</li>
               <li>Angular (2+)</li>
-              <li>C#</li>
-              <li>.NET & Azure</li>
-              <li>SQL Server/PostgreSQL</li>
-              <li>Cosmos DB</li>
+              <li>HTML</li>
+              <li>Azure cloud</li>
+              <li>SQL Server/PostgreSQL/Cosmos DB</li>
               <li>Git</li>
               <li>Linux</li>
               <li>Docker</li>
-              <li>Azure</li>
+              <li>CSS (+ frameworks like MUI, Tailwind)</li>
               <li>CI/CD using Github actions, Azure DevOps</li>
               <li>Terraform</li>
-              <li className="opacity-50">Android (Java)</li>
-              <li className="opacity-50">iOS (Swift)</li>
+              <li>Android (Java)</li>
+              <li>Laravel</li>
+              <li>(Currently learning AWS)</li>
             </ul>
           </div>
         </div>

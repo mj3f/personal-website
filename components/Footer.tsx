@@ -18,7 +18,7 @@ const Footer: React.FC = () => {
           <FontAwesomeIcon icon={faGithub} size={"2x"} />
         </Link>
         <Link
-          href="https://www.linkedin.com/in/michael-jeffs-pratt-650046123/"
+          href="https://www.linkedin.com/in/michael-j-650046123"
           className={anchorClass}
         >
           <FontAwesomeIcon icon={faLinkedin} size={"2x"} />
