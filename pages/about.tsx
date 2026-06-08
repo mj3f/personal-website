@@ -27,7 +27,7 @@ export default function About() {
             <p className="p-2">
               In my spare time you can find me chilling out with my 2 cats,
               reading books, playing video games, at the gym, watching movies
-              and getting thrown around in Judo.
+              and trying not to get thrown around in Judo.
             </p>
           </article>
           <div className="hidden md:w-1/3 md:flex md:justify-end">
@@ -40,26 +40,38 @@ export default function About() {
           <p className="text-2xl md:text-4xl pl-2 pb-2 font-semibold text-center">
             Technical Skills
           </p>
-          <div className="flex justify-evenly">
-            <ul className="list-disc columns-1 md:columns-3">
-              <li>C#</li>
-              <li>.NET 8/10</li>
-              <li>TypeScript</li>
-              <li>React</li>
-              <li>Angular (2+)</li>
-              <li>HTML</li>
-              <li>Azure cloud</li>
-              <li>SQL Server/PostgreSQL/Cosmos DB</li>
-              <li>Git</li>
-              <li>Linux</li>
-              <li>Docker</li>
-              <li>CSS (+ frameworks like MUI, Tailwind)</li>
-              <li>CI/CD using Github actions, Azure DevOps</li>
-              <li>Terraform</li>
-              <li>Android (Java)</li>
-              <li>Laravel</li>
-              <li>(Currently learning AWS)</li>
-            </ul>
+          <div className="flex justify-between">
+            <div className="flex-col">
+              <p className="font-semibold">Regularly practice</p>
+              <ul className="list-disc columns-1 md:columns-3">
+                <li>C#</li>
+                <li>.NET 8/10</li>
+                <li>TypeScript</li>
+                <li>React</li>
+                <li>Angular (2+)</li>
+                <li>HTML</li>
+                <li>Azure</li>
+                <li>SQL Server/PostgreSQL/Cosmos DB</li>
+                <li>Git</li>
+                <li>Linux</li>
+                <li>Docker</li>
+                <li>CSS (+ frameworks like MUI, Tailwind)</li>
+                <li>CI/CD using Github actions, Azure DevOps</li>
+                <li>Terraform</li>
+                <li>Android (Java)</li>
+              </ul>
+            </div>
+            <div className="flex-col">
+              <p className="font-semibold">Some experience</p>
+              <ul className="list-disc columns-1 md:columns-3">
+                <li>AWS</li>
+                <li>Laravel</li>
+                <li>Java Spring Boot</li>
+                <li>Go</li>
+                <li>SQLite</li>
+                <li>Vue</li>
+              </ul>
+            </div>
           </div>
         </div>
       </ContentPageLayout>
